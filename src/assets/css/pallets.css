@@ -1,0 +1,10 @@
+:root {
+    --backgroundColor: #212329;
+    --inputColor: #505362;
+    --borderColor: #3a4047;
+    --inputFontColor: #e8e8e9;
+    --levelFontColor: #5a5c6d;
+    --userFontColor: #e0e0e9;
+    --userBorderEmptyColor: #4a4c59;
+    --userBorderFullColor: #d51f26;
+}

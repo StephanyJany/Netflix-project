@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="O projeto Netflix foi desenvolvido para representar a criação de um layout semelhante à grande empresa de streaming de vídeos Netflix." />
+  <link rel="stylesheet" href="src/assets/css/pallets.css" />
+  <link rel="stylesheet" href="src/assets/css/header.css" />
+  <link rel="stylesheet" href="src/assets/css/banner.css" />
+  <link rel="stylesheet" href="src/assets/css/aside.css" />
+  <link rel="stylesheet" href="src/assets/css/watching.css" />
+  <link rel="stylesheet" href="src/assets/css/parties.css" />
+  <link rel="stylesheet" href="src/assets/css/members.css" />
+  <link rel="stylesheet" href="src/components/Party/index.css" />
+  <link rel="stylesheet" href="src/assets/css/global.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="src/components/Member/index.css" />
+  <link rel="stylesheet" href="src/components/Banner/index.css" />
+  <link rel="shortcut icon" href="./src//assets//imgs//favicon.ico.png" type="image/x-icon">
+  <title>Netflix.</title>
+</head>
+
+<body id="container">
+  <header id="header" class="header">
+    <div class="header__nav">
+      <div class="nav__buttons">
+        <button class="buttons__btn">
+          <img src="src/assets/imgs/header/arrow-left.png" alt="returnButton" />
+        </button>
+        <button class="buttons__btn">
+          <img src="src/assets/imgs/header/arrow-right.png" alt="returnButton" />
+        </button>
+      </div>
+      <div class="nav__input">
+        <img class="input__image--left" src="src/assets/imgs/header/search-img.png" alt="" />
+        <input class="input__searchbar" type="text" name="" id="" placeholder="Search..." />
+        <img class="input__image--right" src="src/assets/imgs/header/microphone.png" alt="" />
+      </div>
+    </div>
+    <div class="header__menu">
+      <div class="menu__icons">
+        <a class="icons__anchor" href="">
+          <img src="src/assets/imgs/header/notifications-notified.png" alt="notifications" />
+        </a>
+        <a class="icons__anchor" href="">
+          <img src="src/assets/imgs/header/chats-notified.png" alt="chats" />
+        </a>
+      </div>
+      <a class="menu__user">
+        <img class="user__picture" src="src/assets/imgs/header/user-img.jpg" alt="user-picture" />
+        <div class="user__info">
+          <h3 class="info__name">Ramona F.</h3>
+          <p class="info__level">level 12</p>
+        </div>
+      </a>
+    </div>
+
+  </header>
+  <aside id="aside" class="aside">
+    <header class="aside__header">
+      <a class="header__link" href="/">
+        <h1 class="link__title">Netflix</h1>
+      </a>
+    </header>
+
+    <nav class="aside__nav">
+      <h2 class="nav__text">Menu</h2>
+
+      <ul class="nav__list">
+        <li class="list__item">
+          <a class="item__link" href="">
+            <p class="link__icon material-symbols-outlined">explore</p>
+            <p class="link__text">Browse</p>
+          </a>
+        </li>
+        <li class="list__item">
+          <a class="item__link" href="">
+            <p class="link__icon material-symbols-outlined">favorite</p>
+            <p class="link__text">Watchlist</p>
+          </a>
+        </li>
+        <li class="list__item">
+          <a class="item__link" href="">
+            <p class="link__icon material-symbols-outlined">calendar_month</p>
+            <p class="link__text">Coming soon</p>
+          </a>
+        </li>
+      </ul>
+
+      <h2 class="nav__text">Social</h2>
+
+      <ul class="nav__list">
+        <li class="list__item">
+          <a class="item__link" href="">
+            <p class="link__icon material-symbols-outlined">group</p>
+            <p class="link__text">Friends</p>
+          </a>
+        </li>
+        <li class="list__item">
+          <a class="item__link" href="">
+            <p class="link__icon material-symbols-outlined">diversity_3</p>
+            <p class="link__text">Parties</p>
+          </a>
+        </li>
+      </ul>
+
+      <h2 class="nav__text">General</h2>
+
+      <ul class="nav__list">
+        <li class="list__item">
+          <a class="item__link" href="">
+            <p class="link__icon material-symbols-outlined">settings</p>
+            <p class="link__text">Settings</p>
+          </a>
+        </li>
+        <li class="list__item">
+          <a class="item__link" href="">
+            <p class="link__icon material-symbols-outlined">logout</p>
+            <p class="link__text">Log out</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="aside__box">
+      <img class="box__img" src="src/assets/imgs/aside/418f4071cc323c3791af0bc54782a6df.jpg" alt="iconePipoca" />
+      <p class="box__title">Popcorn Addict</p>
+      <p class="box__text">4/6 viewing time</p>
+      <a class="box__link" href="">
+        <p class="link__text">View challenges</p>
+      </a>
+    </div>
+  </aside>
+  <aside id="members">
+    <ul class="members__container">
+      <li class="container__list">
+        <button class="add__img">
+          <img class="add__img" src="src/assets/imgs/members/mais (1).png" alt="button add" />
+        </button>
+      </li>
+      <li class="container__list">
+        <a href="/" class="list__profile">
+          <picture class="profile__pictures">
+            <img class="pictures__user" src="src/assets/imgs/members/live2.jpg" alt="profile picture" />
+          </picture>
+        </a>
+      </li>
+      <li class="container__list">
+        <a href="/" class="list__profile">
+          <picture class="profile__pictures">
+            <img class="pictures__user" src="src/assets/imgs/members/live1.jpg" alt="profile picture" />
+          </picture>
+        </a>
+      </li>
+      <li class="container__list">
+        <a href="/" class="list__profile">
+          <picture class="profile__pictures">
+            <img class="pictures__user" src="src/assets/imgs/members/live3.jpg" alt="profile picture" />
+          </picture>
+        </a>
+      </li>
+      <li class="container__list">
+        <a href="/" class="list__profile">
+          <picture class="profile__pictures">
+            <img class="pictures__user" src="src/assets/imgs/members/live4.jpg" alt="profile picture" />
+          </picture>
+        </a>
+      </li>
+      <li class="container__list">
+        <a href="/" class="list__profile">
+          <picture class="profile__pictures">
+            <img class="pictures__user" src="src/assets/imgs/members/live5.jpg" alt="profile picture" />
+          </picture>
+        </a>
+      </li>
+      <li class="container__list">
+        <a href="/" class="list__profile">
+          <picture class="profile__pictures profile__pictures--display">
+            <img class="pictures__user" src="src/assets/imgs/members/live6.jpg" alt="profile picture" />
+          </picture>
+        </a>
+      </li>
+      <li class="container__list">
+        <a href="/" class="list__profile">
+          <picture class="profile__pictures profile__pictures--display">
+            <img class="pictures__user" src="src/assets/imgs/members/live7.jpg" alt="profile picture" />
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <main id="content">
+    <section id="banner">
+      <div class="banner__header">
+        <p class="header__xp">40XP</p>
+        <picture class="header__profile">
+          <img class="profile__img profile__img--scale" src="src/assets/imgs/banner/batman.jpg" alt="" />
+          <img class="profile__img profile__img--scale" src="src/assets/imgs/banner/geralt.jpg" alt="" />
+          <img class="profile__img profile__img--scale" src="src/assets/imgs/banner/lobo.jpeg" alt="" />
+        </picture>
+        <p class="header__text">+5 friends are watching</p>
+      </div>
+
+      <div class="banner__title">
+        <h2 class="title__movie">Blade Runner</h2>
+        <p class="title__percentage">98% Match</p>
+      </div>
+
+      <div class="banner__footer">
+        <div class="footer__options">
+          <a class="options__link" href="">
+            <h3 class="link__text">Watch</h3>
+          </a>
+          <button class="options__button">
+            <p class="button__text">+</p>
+          </button>
+        </div>
+        <ul class="footer__list">
+          <li class="list__imgs">
+            <img class="imgs__img imgs__img--border" src="src/assets/imgs/banner/dark.jpg" alt="Dark" />
+          </li>
+          <li class="list__imgs">
+            <img class="imgs__img imgs__img--border" src="src/assets/imgs/banner/blade_runner2.jpg"
+              alt="Blade Runner" />
+          </li>
+          <li class="list__imgs">
+            <img class="imgs__img imgs__img--border" src="src/assets/imgs/banner/stranger_things.jpg"
+              alt="Stranger Things" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="parties" class="parties">
+      <section class="parties__organizer">
+        <div class="organizer__titleAndScroll">
+          <h2 class="titleAndScroll__title">Parties</h2>
+          <div class="titleAndScroll__scrollBar">
+            <div class="scrollBar__switch"></div>
+          </div>
+        </div>
+        <div class="organizer__cards">
+          <a href="#" class="cards__card">
+            <div class="card__top">
+              <img src="src/assets/imgs/parties/cadaver.jpg" alt="Miniatura do Filme" class="top__movieCover" />
+              <picture class="top__watchTogether">
+                <img src="src/assets/imgs/parties/usuario1.jpg" alt="Usuario1"
+                  class="watchTogether__watcher watchTogether__watcher-1" />
+                <img src="src/assets/imgs/parties/usuario2.jpg" alt="Usuario2"
+                  class="watchTogether__watcher watchTogether__watcher-2" />
+                <img src="src/assets/imgs/parties/usuario3.jpg" alt="Usuario3"
+                  class="watchTogether__watcher watchTogether__watcher-3" />
+              </picture>
+            </div>
+            <div class="card__bottom">
+              <h2 class="bottom__title">Cadaver</h2>
+              <p class="bottom__description">Horror Marathon!</p>
+            </div>
+          </a>
+          <a href="#" class="cards__card">
+            <div class="card__top">
+              <img src="src/assets/imgs/parties/blade_runner.jpg" alt="Miniatura do Filme" class="top__movieCover" />
+              <picture class="top__watchTogether">
+                <img src="src/assets/imgs/parties/usuario4.jpg" alt="Usuario1"
+                  class="watchTogether__watcher watchTogether__watcher-1" />
+                <img src="src/assets/imgs/parties/usuario5.jpg" alt="Usuario2"
+                  class="watchTogether__watcher watchTogether__watcher-2" />
+                <img src="src/assets/imgs/parties/usuario6.jpg" alt="Usuario3"
+                  class="watchTogether__watcher watchTogether__watcher-3" />
+              </picture>
+            </div>
+            <div class="card__bottom">
+              <h2 class="bottom__title">Blade Runner 2049</h2>
+              <p class="bottom__description">Sci Fi binge</p>
+            </div>
+          </a>
+          <a href="#" class="cards__card">
+            <div class="card__top">
+              <img src="src/assets/imgs/parties/monters.jpg" alt="Miniatura do Filme" class="top__movieCover" />
+              <picture class="top__watchTogether">
+                <img src="src/assets/imgs/parties/usuario7.jpg" alt="Usuario1"
+                  class="watchTogether__watcher watchTogether__watcher-1" />
+                <img src="src/assets/imgs/parties/usuario8.jpg" alt="Usuario2"
+                  class="watchTogether__watcher watchTogether__watcher-2" />
+                <img src="src/assets/imgs/parties/usuario9.jpg" alt="Usuario3"
+                  class="watchTogether__watcher watchTogether__watcher-3" />
+              </picture>
+            </div>
+            <div class="card__bottom">
+              <h2 class="bottom__title">Monters Inc.</h2>
+              <p class="bottom__description">Don't make me grow up</p>
+            </div>
+          </a>
+          <a href="#" class="cards__card">
+            <div class="card__top">
+              <img src="src/assets/imgs/parties/friends.jpg" alt="Miniatura do Filme" class="top__movieCover" />
+              <picture class="top__watchTogether">
+                <img src="src/assets/imgs/parties/usuario10.jpg" alt="Usuario1"
+                  class="watchTogether__watcher watchTogether__watcher-1" />
+                <img src="src/assets/imgs/parties/usuario11.jpg" alt="Usuario2"
+                  class="watchTogether__watcher watchTogether__watcher-2" />
+                <img src="src/assets/imgs/parties/usuario12.jpg" alt="Usuario3"
+                  class="watchTogether__watcher watchTogether__watcher-3" />
+              </picture>
+            </div>
+            <div class="card__bottom">
+              <h2 class="bottom__title">Friends</h2>
+              <p class="bottom__description">We are on a break!</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <section id="watching">
+      <h4 class="watching__title">Continue Watching</h4>
+      <div class="watching__container">
+        <a class="container__cards">
+          <p class="cards__icons">10XP</p>
+          <img src="src/assets/imgs/watching/hauntingwatching.jpg" alt="" class="cards__movie" width="200"
+            height="200" />
+          <span class="cards__description">
+            <progress value="70" max="100" class="cards__loading"></progress>
+            <h4 class="description__name">Haunting of The Hill House</h4>
+          </span>
+        </a>
+        <a class="container__cards">
+          <p class="cards__icons">10XP</p>
+          <img src="src/assets/imgs/watching/ratchedwatching.jpg" alt="" class="cards__movie" width="200"
+            height="200" />
+          <span class="cards__description">
+            <progress value="60" max="100" class="cards__loading"></progress>
+            <h4 class="description__name">Ratched</h4>
+          </span>
+        </a>
+        <a class="container__cards">
+          <p class="cards__icons">40XP</p>
+          <img src="src/assets/imgs/watching/elcaminowatching.jpg" alt="" class="cards__movie" width="200"
+            height="200" />
+          <span class="cards__description">
+            <progress value="30" max="100" class="cards__loading"></progress>
+            <h4 class="description__name">El Camino</h4>
+          </span>
+        </a>
+        <a class="container__cards">
+          <p class="cards__icons">10XP</p>
+          <img src="src/assets/imgs/watching/strangerthingswatching.jpeg" alt="" class="cards__movie" width="200"
+            height="200" />
+          <span class="cards__description">
+            <progress value="80" max="100" class="cards__loading"></progress>
+            <h4 class="description__name">Stranger Things</h4>
+          </span>
+        </a>
+      </div>
+    </section>
+    <div id="partyModal" class="hidden"></div>
+  </main>
+  <div id="fade" class="hidden"></div>
+  <script type="module" src="src/components/Member/index.js"></script>
+  <script type="module" src="src/components/Party/index.js"></script>
+  <script type="module" src="src/components/Banner/index.js"></script>
+  <script type="module" src="src/assets/js/banner.js"></script>
+  <script type="module" src="src/assets/js/main.js"></script>
+  <script type="module" src="src/utils/openModal.js"></script>
+  <script type="module" src="src/utils/closeModal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #272830;
+  border-radius: 20px;
+}
+
+#container {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.4fr 8fr 90px;
+  grid-template-rows: 90px 8.8fr;
+  grid-template-areas:
+    "aside header members"
+    "aside content members";
+  overflow: hidden;
+  background: linear-gradient(to bottom, #222329, #17181c);
+}
+
+#header {
+  overflow: hidden;
+  grid-area: header;
+  width: 100%;
+}
+
+#content {
+  grid-area: content;
+  overflow-y: auto;
+}
+
+#aside {
+  grid-area: aside;
+  overflow-y: auto;
+  border-right: 1.5px solid #272830;
+}
+
+#members {
+  overflow: auto;
+  grid-area: members;
+}
+
+#banner {
+  grid-area: banner;
+}
+
+#parties {
+  grid-area: parties;
+}
+
+#wathing {
+  grid-area: wathing;
+}
+
+@media (max-width: 820px) {
+  #container {
+    grid-template-areas:
+      "header "
+      "content";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 9fr;
+  }
+
+  #aside {
+    display: none;
+  }
+
+  #members {
+    display: none;
+  }
+}

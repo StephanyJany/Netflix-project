@@ -1,0 +1,69 @@
+.modalBanner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #212329;
+  width: 400px;
+  height: 150px;
+  border-radius: 8px;
+  padding: 8px;
+  z-index: 11;
+  transition: 0.3s;
+  pointer-events: all;
+}
+
+.modalBanner__newBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #212329;
+  height: 100%;
+  padding: 8px;
+}
+
+.newBanner__close,
+.form__submitBanner {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.newBanner__close {
+  background-color: #212329;
+}
+
+.newBanner__movie {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie__form {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input__img,
+.input__name {
+  width: 280px;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.form__submitBanner {
+  width: 80px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: red;
+}
